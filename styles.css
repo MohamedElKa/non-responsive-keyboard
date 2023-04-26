@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Work Sans', sans-serif;
+    height: 100vh;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.keyboard{
+    background-color: rgb(234, 234, 234);
+    gap: 25px;
+}
+
+.text-area textarea{
+    width: 100%;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    font-size: 17px;
+    padding: 25px;
+}
+
+.text-area{
+    width: 100%;
+    background-color: black;
+    padding:11px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.keys{
+    padding: 5px;
+    background-color: rgb(234, 234, 234);
+    display: grid;
+    gap: 25px;
+}
+
+.keyboard .row .key:hover{
+    background-color: rgb(209, 209, 209);
+}
+
+.keyboard .row{
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    gap: 5px;
+    /* gap: 15px; */
+}
+
+.keyboard .row .key{
+    background-color: white;
+    grid-column: span 1;
+    gap: 1;
+    text-align: center;
+    padding: 15px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 6px 15px 6px -12px rgba(0,0,0,0.24);
+-webkit-box-shadow: 6px 15px 6px -12px rgba(0,0,0,0.24);
+-moz-box-shadow: 6px 15px 6px -12px rgba(0,0,0,0.24);
+}
+
+.keyboard .row .del{
+    grid-column: span 2;
+}
+
+.keyboard .row .tab{
+    grid-column: span 2;
+}
+
+.keyboard .row .caps{
+    grid-column: span 2;
+}
+
+.keyboard .row .shift{
+    grid-column: span 2;
+}
+
+.keyboard .row .enter{
+    grid-column: span 2;
+}
+
+.keyboard .row .com{
+    grid-column: span 2;
+}
+
+.keyboard .row .space{
+    grid-column: span 12;
+}
+
+ 
+ 
